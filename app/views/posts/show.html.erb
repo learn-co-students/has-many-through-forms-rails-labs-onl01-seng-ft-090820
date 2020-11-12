@@ -1,1 +1,21 @@
+<h1><%= @post.title %></h1>
+
+<h2><%= @post.content %></h2>
+
+<% @post.categories.each do |category| %>
+    <%= category.name %>
+<% end %>
+
+
+
+
+
+
+
+<%# @post.users iterate through and print the names %>
+
+<%# put a form on this page @post.comments.build equals @comment (It's the same as) %>
+
+<%#  f.hidden_field :post_id, value: @post.id %>
+<%# fields for (for the user), has to be associated with @comment.build_user %>
 
