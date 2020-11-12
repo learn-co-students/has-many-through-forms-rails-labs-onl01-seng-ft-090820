@@ -1,0 +1,8 @@
+<h1>Posts Index</h1>
+
+<% @posts .each do |post| %>
+    <li><%= link_to post.title, post %></li>
+<% end %>
+
+<br><br>
+<%= link_to 'New Post', new_post_path %>
